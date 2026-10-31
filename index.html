@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="box">
+        <table class="calculyator">
+        <tr>
+            <td class="view" colspan="4">
+                <input class="display" type="text" placeholder="0" disabled>
+            </td>
+        </tr>
+        <tr class="a">
+            <td class="num"><input type="button" value="7" onclick="son('7')"></td>
+            <td class="num"><input type="button" value="8" onclick="son('8')"></td>
+            <td class="num"><input type="button" value="9" onclick="son('9')"></td>
+            <td class="icon"><input type="button" value="+" onclick="son('+')"></td>
+        </tr>
+        <tr class="a">
+            <td class="num"><input type="button" value="4" onclick="son('4')"></td>
+            <td class="num"><input type="button" value="5" onclick="son('5')"></td>
+            <td class="num"><input type="button" value="6" onclick="son('6')"></td>
+            <td class="icon"><input type="button" value="-" onclick="son('-')"></td>
+        </tr>
+        <tr class="a">
+            <td class="num"><input type="button" value="1" onclick="son('1')"></td>
+            <td class="num"><input type="button" value="2" onclick="son('2')"></td>
+            <td class="num"><input type="button" value="3" onclick="son('3')"></td>
+            <td class="icon"><input type="button" value="*" onclick="son('*')"></td>
+        </tr>
+        <tr class="a">
+            <td class="num"><input type="button" value="C" onclick="Clear()"></td>
+            <td class="num"><input type="button" value="0" onclick="son('0')"></td>
+            <td class="num"><input type="button" value="=" onclick="Result()"></td>
+            <td class="icon"><input type="button" value="/" onclick="son('/')"></td>
+        </tr>
+    </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
